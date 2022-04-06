@@ -5,6 +5,8 @@ import "github.com/fatih/color"
 func bmi(hmotnost, vyska float64) (float64, string) {
 	var _type string
 
+	vyska /= 100
+
 	bmi := hmotnost / (vyska * vyska)
 
 	switch {
