@@ -28,4 +28,6 @@ func main() {
 	bmi, _type := bmi(hmotnost, vyska)
 
 	logInfo(fmt.Sprintf("BMI: %v %s", bmi, _type))
+
+	fmt.Scanln()
 }
