@@ -15,15 +15,15 @@ func main() {
 
 	var hmotnost float64
 
-	survey.AskOne(&survey.Input{
+	checkErr(survey.AskOne(&survey.Input{
 		Message: "Hmotnosť (kg):",
-	}, &hmotnost)
+	}, &hmotnost))
 
 	var vyska float64
 
-	survey.AskOne(&survey.Input{
+	checkErr(survey.AskOne(&survey.Input{
 		Message: "Výška (cm):",
-	}, &vyska)
+	}, &vyska))
 
 	bmi, _type := bmi(hmotnost, vyska)
 
