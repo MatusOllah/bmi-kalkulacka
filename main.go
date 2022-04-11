@@ -8,8 +8,10 @@ import (
 	"github.com/fatih/color"
 )
 
+const verzia = "1.0"
+
 func main() {
-	fmt.Fprintf(color.Output, "%s %s\n", color.New(color.FgWhite, color.Bold).Sprint("== bmi-kalkulacka verzia "), color.New(color.FgBlue, color.Bold).Sprint("1.0"))
+	fmt.Fprintf(color.Output, "%s %s\n", color.New(color.FgWhite, color.Bold).Sprint("== bmi-kalkulacka verzia "), color.New(color.FgBlue, color.Bold).Sprint(verzia))
 	fmt.Fprintf(color.Output, "%s %s\n", color.New(color.FgWhite, color.Bold).Sprint("== Go verzia "), color.New(color.FgBlue, color.Bold).Sprint(runtime.Version()))
 	fmt.Println()
 
